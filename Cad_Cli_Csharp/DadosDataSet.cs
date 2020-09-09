@@ -4,6 +4,9 @@
 
     partial class DadosDataSet
     {
+        partial class clientesDataTable
+        {
+        }
     }
 }
 
