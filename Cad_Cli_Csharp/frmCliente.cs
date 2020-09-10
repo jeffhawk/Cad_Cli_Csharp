@@ -40,7 +40,8 @@ namespace Cad_Cli_Csharp
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
-            frmPesquisaCliente frmPesqCli = new frmPesquisaCliente(this);
+            frmPesquisaCliente frmPesquisaCliente = new frmPesquisaCliente(this);
+            frmPesquisaCliente frmPesqCli = frmPesquisaCliente;
             frmPesqCli.ShowDialog(this);
 
         }
@@ -113,6 +114,16 @@ namespace Cad_Cli_Csharp
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

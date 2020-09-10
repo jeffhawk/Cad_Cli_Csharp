@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btnLocalizar = new System.Windows.Forms.Button();
             this.btnIncluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
@@ -93,21 +93,23 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(279, 20);
             this.txtNome.TabIndex = 5;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
-            // textBox1
+            // txtEndereco
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtEndereco.Location = new System.Drawing.Point(99, 103);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(279, 20);
+            this.txtEndereco.TabIndex = 6;
+            this.txtEndereco.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // maskedTextBox1
+            // mskTelefone
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(99, 140);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 7;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.mskTelefone.Location = new System.Drawing.Point(99, 140);
+            this.mskTelefone.Name = "mskTelefone";
+            this.mskTelefone.Size = new System.Drawing.Size(100, 20);
+            this.mskTelefone.TabIndex = 7;
+            this.mskTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // btnLocalizar
             // 
@@ -169,8 +171,8 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnIncluir);
             this.Controls.Add(this.btnLocalizar);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mskTelefone);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.mskCPF);
             this.Controls.Add(this.label4);
@@ -194,8 +196,8 @@
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.MaskedTextBox mskTelefone;
         private System.Windows.Forms.Button btnLocalizar;
         private System.Windows.Forms.Button btnIncluir;
         private System.Windows.Forms.Button btnAlterar;

@@ -12,9 +12,16 @@ namespace Cad_Cli_Csharp
 {
     public partial class frmPesquisaCliente : Form
     {
+        private frmCliente frmCliente;
+
         public frmPesquisaCliente()
         {
             InitializeComponent();
+        }
+
+        public frmPesquisaCliente(frmCliente frmCliente)
+        {
+            this.frmCliente = frmCliente;
         }
     }
 }
